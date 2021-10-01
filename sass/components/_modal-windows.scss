@@ -1,0 +1,236 @@
+/* >>>>>>Modal window<<<<<<< */
+.backdrop{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: 0;
+  }
+}
+
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--fourth-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;  
+}
+
+.modal__btn-icon{
+  display: flex;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.modal__btn-close{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--fourth-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:
+  cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus{
+  fill: var(--third-text-color);
+  }
+}
+
+
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__title{
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.modal-form__field{
+  margin-bottom: 10px;
+  &:focus-within{
+  border-color: var(--third-text-color);
+  }
+}
+
+.modal-form__label{
+  display: block;
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+
+}
+
+.modal-form__input-wrap{
+  position: relative;
+  display: block;
+  
+}
+
+
+.modal-form__input{
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function:
+  cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus{
+  border-color: var(--third-text-color);
+  } 
+}
+
+.modal-form__icon{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:
+  cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-form__field:focus-within &{
+  fill: var(--third-text-color);
+  }
+}
+
+.modal-comment{
+  margin-bottom: 20px;
+}
+
+.modal-comment__text{
+  width: 100%;
+  height: 96px;
+  padding: 16px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function:
+  cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus{
+  border-color: var(--third-text-color);
+  }
+  &::placeholder{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-checkbox{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  
+}
+.modal-checkbox__label{
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.modal-checkbox__link{
+  margin-left: 5px;
+  color: var(--third-text-color);
+  &:visited{
+  color: rgb(85, 26, 139);
+  }  
+}
+
+.modal-checkbox__check{
+  visibility: hidden;
+  
+}
+
+.modal-checkbox__icon{
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill:var(--fourth-text-color);
+}
+
+.modal-checkbox__check{
+  &:checked + .modal-checkbox__label > .modal-checkbox__icon{
+  background-color: var(--third-text-color);
+  border: none;
+  }
+}
+
+.modal__btn-send{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--third-text-color);
+  color: var(--fourth-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 250ms 
+  cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus{
+  background-color: var(--bg-color-third);
+  }
+}

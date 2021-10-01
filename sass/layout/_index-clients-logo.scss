@@ -1,0 +1,64 @@
+/* ..........clients Logo.......... */
+
+.clients-title {
+  margin-bottom: 15px;
+  // margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.7;
+  // font-size: 36px;
+  // line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // align-items: center;
+  
+}
+
+.client-list__logo {
+  width: 210px;
+  // width: 170px;
+  height: 92px;
+  width: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+}
+
+.client-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--third-text-color);
+  }
+}
+
+.client-list__icon {
+  fill: var(--icons-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .client-list__link:hover &,
+  .client-list__link:focus & {
+    fill: var(--third-text-color);
+  }
+}
