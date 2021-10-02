@@ -75,21 +75,13 @@ img {
 }
 
 .section {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
-    max-width: 1200px;
-    padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-
-.section_fix_padding {
-  padding-top: 94px;
-  padding-bottom: 0px;
 }
 
 .nav-links .link.active {
@@ -424,8 +416,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 26px;
-    line-height: 1.61;
     max-width: 360px;
   }
 }
@@ -463,8 +453,48 @@ img {
 }
 
 /* section-two-we-offer */
-.offer__bg {
+@media screen and (min-width: 768px) {
+  .offer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer {
+    display: flex;
+    flex-wrap: unset;
+  }
+}
+
+.offer__list {
   width: 450px;
+}
+
+@media screen and (max-width: 767px) {
+  .offer__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .offer__list {
+    width: 354px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer__list {
+    width: 270px;
+  }
+  .offer__list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.offer__bg {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bg-color-two);
@@ -472,24 +502,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .offer__bg {
-    max-width: 1200px;
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.offer__list {
-  margin-bottom: 30px;
-}
-
-.offer__list:nth-child(4) {
-  margin-bottom: 60px;
 }
 
 .offer__title {
@@ -513,8 +525,10 @@ img {
 }
 
 /* >>>>>>>>>>>>section-what-we-do<<<<<<<<<<<< */
-.section-what-we-do {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .we-do {
+    display: none;
+  }
 }
 
 .what-we-do {
@@ -525,24 +539,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-
-@media screen and (min-width: 480px) {
-  .what-we-do {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .what-we-do {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .what-we-do {
-    max-width: 1200px;
-  }
 }
 
 .img {
