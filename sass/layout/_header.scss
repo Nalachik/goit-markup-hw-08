@@ -22,6 +22,9 @@
   color: var(--special-color);
 }
 .header-nav__menu-btn{
+  @media screen and(min-width:768px) {
+    display: none;
+  }
   display: inline-flex;
   margin: 0px;
   padding: 0px;
@@ -55,6 +58,9 @@
 }
 
 .nav-links {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
   display: flex;
   margin-left: 93px;
   padding: 30.5px 0px 30.5px 0px;
@@ -93,6 +99,9 @@
 
 /* header-contacts-info */
 .header-contacts{
+  @media screen and(max-width:767px) {
+    display: none;
+  }
   display: flex;
   align-items: center;
   margin-left: 331px;

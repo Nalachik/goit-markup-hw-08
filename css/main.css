@@ -131,6 +131,12 @@ img {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .header-nav__menu-btn {
+    display: none;
+  }
+}
+
 .header-nav__menu-btn .icon-close {
   display: none;
 }
@@ -153,6 +159,12 @@ img {
   display: flex;
   margin-left: 93px;
   padding: 30.5px 0px 30.5px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
 }
 
 .nav-links__item:not(:last-child) {
@@ -187,6 +199,12 @@ img {
   display: flex;
   align-items: center;
   margin-left: 331px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
 }
 
 .header-contacts__item:not(:last-child) {
@@ -477,10 +495,28 @@ img {
   max-width: 1600px;
   padding: 118px 45px;
   margin: 0px auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/mobile-overlay1x1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/mobile-overlay1x2.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tab/tab-overlay1x1.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tab/tab-overlay1x2.jpg");
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -489,6 +525,13 @@ img {
     padding: 200px;
     margin-left: auto;
     margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desktop/D-overlay1x1.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desktop/D-overlay1x2.jpg");
   }
 }
 
