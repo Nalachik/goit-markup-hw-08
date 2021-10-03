@@ -16,7 +16,7 @@
 .offer__list {
   width: 100%;
   margin-bottom: 30px;
-  @media screen and(min-width) {
+  @media screen and(min-width:480px) {
     width: 450px;
   }
   @media screen and (max-width: 1199px) {
