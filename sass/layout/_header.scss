@@ -21,7 +21,32 @@
 .header-nav__studio {
   color: var(--special-color);
 }
-
+.header-nav__menu-btn{
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}
+.header-nav__menu-btn{
+  .icon-close{
+    display: none;
+  }
+}
+.header-nav__menu-btn{
+  .is-open{
+    .icon-close{
+      display: block;
+    }
+  }
+}
+.header-nav__menu-btn{
+  .is-open{
+    .icon-menu{
+      display: none;
+    }
+  }
+}
 /* Navigation-links */
 
 .header-nav {

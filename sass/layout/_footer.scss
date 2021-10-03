@@ -1,16 +1,25 @@
 .footer {
+
   padding: 60px 0px;
   background-color: var(--bg-color-one);
 }
 .footer{
   .container{
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
   }
 } 
 
 .footer-set{
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 60px;
+  @media screen and(min-width:768px) {
+    
+  }
+  // margin-right: 70px;
 }
 
 .footer-set__webstudio {
@@ -18,10 +27,14 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size:24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer-set__studio {
@@ -60,7 +73,12 @@
 
 /* <<<<<<<<JOIN-LINKS>>>>>>> */
 .footer-join{
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  // margin-right: 93px;
 }
 
 .join{
@@ -107,6 +125,15 @@
 }
 
 /* <<<<<Fotter-subscribe-form>>>>> */
+.footer-subscribe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and(min-width:768px) {
+    
+  }
+}
 
 .footer-subscribe__title{
   display: block;
@@ -121,13 +148,20 @@
 
 .footer-subscribe__form{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  @media screen and(min-width:1200px) {
+    flex-direction: unset;
+    align-items: unset;
+  }
   
 }
 
 .footer-subscribe__email{
+  margin-bottom: 20px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
   height: 50px; 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -136,6 +170,13 @@
   &:hover,
   &:focus{
   outline: none;
+  }
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 358px;
+    margin-bottom: unset;
   }
 }
 
