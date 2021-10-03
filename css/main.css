@@ -209,7 +209,11 @@ img {
   background-color: var(--bg-color-one);
 }
 
-/* footer-webstudio */
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-set {
   margin-right: 70px;
 }
@@ -306,20 +310,6 @@ img {
 
 .footer-join__link:hover, .footer-join__link:focus {
   background-color: var(--third-text-color);
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-address {
-  margin-right: 70px;
-}
-
-.fotter-form {
-  width: 570px;
-  height: 86px;
 }
 
 /* <<<<<Fotter-subscribe-form>>>>> */
@@ -801,12 +791,29 @@ img {
 /* filters first <ul> */
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    flex-wrap: unset;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 /* button */
@@ -834,24 +841,33 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--projects-gap));
-  margin-top: calc(-1 * var(--projects-gap));
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
 }
 
 .project__list {
-  flex-basis: calc(100% / 3 var(--projects-gap));
-  margin-left: var(--projects-gap);
-  margin-top: var(--projects-gap);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .project__list {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__list {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 /* .projects{
   display: flex;
   flex-wrap: wrap;
-  background-color: teal;
 }
 .project{
   width: 370px;
-  background-color: tomato;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -917,7 +933,7 @@ img {
 
 .card__content {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 /* >>>>>>Modal window<<<<<<< */

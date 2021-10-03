@@ -13,15 +13,25 @@
 
 /* filters first <ul> */
 .filter{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
-  
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  @media screen and(min-width:768px) {
+    flex-wrap: unset;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 
 .filter__item{
 &:not(:last-child){
   margin-right: 8px;
+  margin-bottom: 15px;
   }
 }
 

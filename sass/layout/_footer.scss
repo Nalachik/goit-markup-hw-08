@@ -1,10 +1,14 @@
 .footer {
   padding: 60px 0px;
   background-color: var(--bg-color-one);
-
 }
+.footer{
+  .container{
+  display: flex;
+  align-items: baseline;
+  }
+} 
 
-/* footer-webstudio */
 .footer-set{
   margin-right: 70px;
 }
@@ -23,7 +27,6 @@
 .footer-set__studio {
   color: var(--fourth-text-color);
 }
-
 /* address */
 .footer-set__address {
   display: block;
@@ -34,6 +37,7 @@
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
 }
+
 /* footer-contacts-info */
 .footer-set__contacts .link:hover,
 .footer-set__contacts .link:focus {
@@ -102,22 +106,6 @@
   }
 }
 
-
-.footer{
-  .container{
-  display: flex;
-  align-items: baseline;
-  }
-} 
-
-.footer-address{
-  margin-right: 70px;
-}
-.fotter-form{
-  width: 570px;
-  height: 86px;
-  
-}
 /* <<<<<Fotter-subscribe-form>>>>> */
 
 .footer-subscribe__title{
