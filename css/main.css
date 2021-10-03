@@ -542,7 +542,6 @@ img {
   background-color: var(--bg-color-third);
 }
 
-/* section-two-we-offer */
 @media screen and (min-width: 768px) {
   .offer {
     display: flex;
@@ -559,17 +558,10 @@ img {
 }
 
 .offer__list {
-  width: 100%;
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .offer__list {
-    width: 450px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .offer__list {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;

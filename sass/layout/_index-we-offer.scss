@@ -1,5 +1,3 @@
-/* section-two-we-offer */
-
 .offer {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -14,17 +12,11 @@
 }
 
 .offer__list {
-  width: 100%;
   margin-bottom: 30px;
-  @media screen and(min-width:480px) {
-    width: 450px;
-  }
-  @media screen and (max-width: 1199px) {
-      // width: 354px;
+  @media screen and(min-width:768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
-  
 
   @media screen and (min-width: 1200px) {
     width: 270px;
