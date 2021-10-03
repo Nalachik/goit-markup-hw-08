@@ -17,19 +17,26 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <nav class="header-nav">
                 <a class="header-nav__webstudio link" lang="en" href="./index.html">Web<span
                         class="header-nav__studio">Studio</span></a>
+                <button type="button" class="header-nav__menu-btn is-open">
+                    <svg class="header-nav__menu" width="40px" height="40px" aria-label="мобильное меню">
+                        <use class="icon-close" href="./images/sprite.svg#icon-menu-close"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
                 <ul class="nav-links list">
-                    <li class="nav-links__item"><a class="nav-links__studio link" href="./index.html">Студия</a></li>
-                    <li class="nav-links__item"><a class="nav-links__portfolio link active" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-links__item"><a class="nav-links__studio link " href="./index.html">Студия</a></li>
+                    <li class="nav-links__item"><a class="nav-links__portfolio active link" href="./portfolio.html">Портфолио</a>
+                    </li>
                     <li class="nav-links__item"><a class="nav-links__contacts link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <!-- header-contacts-info -->
-            <!-- <ul class="header-contacts list">
+    
+            <ul class="header-contacts list">
                 <li class="header-contacts__item"><a class="header-contacts__mail link" href="mailto:info@devstudio.com">
                         <svg class="header-contacts__icon" width="16" height="12">
                             <use href="./images/sprite.svg#icon-envelope"></use>
@@ -41,7 +48,7 @@
             </ul>
     
         </div>
-    </header> --> 
+    </header>
     <main>
         <section class="section">
             <div class="container">
@@ -67,7 +74,7 @@
                                     ./images/desktop/D-card1x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card1x1.jpg. 1x,
                                     ./images/tab/tab-card1x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card1x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card1x1.jpg. 1x,
                                     ./images/mobile/mobile-card1x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card1.jpg" alt="ноутбук">
                                 </picture>
@@ -90,7 +97,7 @@
                                     ./images/desktop/D-card2x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card2x1.jpg. 1x,
                                     ./images/tab/tab-card2x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card2x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card2x1.jpg. 1x,
                                     ./images/mobile/mobile-card2x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card2.jpg" alt="игра-баскетбол">
                                 </picture>
@@ -113,7 +120,7 @@
                                     ./images/desktop/D-card3x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card3x1.jpg. 1x,
                                     ./images/tab/tab-card3x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card3x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card3x1.jpg. 1x,
                                     ./images/mobile/mobile-card3x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card3.jpg" alt="рыба-с-названием-ресторана">
                                 </picture>
@@ -136,7 +143,7 @@
                                     ./images/desktop/D-card4x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card4x1.jpg. 1x,
                                     ./images/tab/tab-card4x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card4x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card4x1.jpg. 1x,
                                     ./images/mobile/mobile-card4x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card4.jpg" alt="наушники">
                                 </picture>
@@ -160,7 +167,7 @@
                                     ./images/desktop/D-card5x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card5x1.jpg. 1x,
                                     ./images/tab/tab-card5x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card5x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card5x1.jpg. 1x,
                                     ./images/mobile/mobile-card5x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card5.jpg" alt="две-коробки">
                                 </picture>
@@ -183,9 +190,9 @@
                                     ./images/desktop/D-card6x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card6x1.jpg. 1x,
                                     ./images/tab/tab-card6x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card6x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card6x1.jpg. 1x,
                                     ./images/mobile/mobile-card6x2.jpg 2x" media="(min-width:480px)">
-                                    <img src="./images/card6.jpg" alt="монитор" width="370" height="294">
+                                    <img src="./images/card6.jpg" alt="монитор">
                                 </picture>
                                 <p class="card__text">Технокряк это современная площадка распространения коронавируса.
                                  Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -206,7 +213,7 @@
                                     ./images/desktop/D-card7x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card7x1.jpg. 1x,
                                     ./images/tab/tab-card7x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card7x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card7x1.jpg. 1x,
                                     ./images/mobile/mobile-card7x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card7.jpg" alt="розвернутая-книга">
                                 </picture>
@@ -229,7 +236,7 @@
                                     ./images/desktop/D-card8x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card8x1.jpg. 1x,
                                     ./images/tab/tab-card8x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card8x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card8x1.jpg. 1x,
                                     ./images/mobile/mobile-card8x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card8.jpg" alt="бирка-с-надписью">
                                 </picture>
@@ -252,7 +259,7 @@
                                     ./images/desktop/D-card9x2.jpg 2x" media="(min-width:1200px)">
                                     <source srcset="./images/tab/tab-card9x1.jpg. 1x,
                                     ./images/tab/tab-card9x2.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/mobile/mobile-card9x1.jpg.jpg.jpg 1x,
+                                    <source srcset="./images/mobile/mobile-card9x1.jpg. 1x,
                                     ./images/mobile/mobile-card9x2.jpg 2x" media="(min-width:480px)">
                                     <img src="./images/card9.jpg" alt="печать-на-ноутбуке">
                                 </picture>
