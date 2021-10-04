@@ -788,12 +788,7 @@ img {
 .social {
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 1199px) {
-  .social {
-    margin-bottom: 24px;
-  }
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 1200px) {
