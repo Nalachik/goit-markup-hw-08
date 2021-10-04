@@ -10,7 +10,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/mobile/mobile-overlay1x1.jpg");
+    url("../images/mobile/mobile-overlay1x1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,7 +22,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/mobile/mobile-overlay1x2.jpg");
+    url("../images/mobile/mobile-overlay1x2.jpg");
   }
   @media screen and(min-width:768px) {
     background-image: linear-gradient(
@@ -30,7 +30,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/tab/tab-overlay1x1.jpg");
+    url("../images/tab/tab-overlay1x1.jpg");
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
@@ -39,7 +39,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/tab/tab-overlay1x2.jpg");}
+    url("../images/tab/tab-overlay1x2.jpg");}
   }
 
   @media screen and (min-width: 1200px) {
@@ -52,7 +52,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/desktop/D-overlay1x1.jpg");
+    url("../images/desktop/D-overlay1x1.jpg");
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
@@ -61,7 +61,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/desktop/D-overlay1x2.jpg");}
+    url("../images/desktop/D-overlay1x2.jpg");}
   }  
 }
 

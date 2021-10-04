@@ -23,7 +23,7 @@
 .header-nav__studio {
   color: var(--special-color);
 }
-.header-nav__menu-btn{
+.mob-menu__btn{
 
   @media screen and(min-width:768px) {
     display: none;
@@ -34,19 +34,19 @@
   border: none;
   background-color: transparent;
 }
-.header-nav__menu-btn{
+.mob-menu__btn{
   .icon-close{
     display: none;
   }
 }
-.header-nav__menu-btn{
+.mob-menu__btn{
   .is-open{
     .icon-close{
       display: block;
     }
   }
 }
-.header-nav__menu-btn{
+.menu-btn{
   .is-open{
     .icon-menu{
       display: none;
