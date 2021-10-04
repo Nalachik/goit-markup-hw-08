@@ -1104,6 +1104,18 @@ img {
 
 @media screen and (min-width: 480px) {
   .card__text {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__text {
     padding: 63px 24px;
   }
 }
