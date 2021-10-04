@@ -1,29 +1,32 @@
-.mob-open{
+.mob-open {
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus{
-    fill:var(--third-text-color);
+  &:focus {
+    fill: var(--third-text-color);
   }
   @media screen and(min-width:768px) {
     display: none;
   }
 }
 
-.mob-menu{
-  width: 100vw;
-  height: 100vw;
+.mob-menu {
+  width: 100%;
+  height: 100%;
   position: fixed;
   background-color: #ffffff;
   top: 0;
-  right: 0; 
+  right: 0;
   padding-left: 40px;
-  
+  @media screen and(min-width:480px){
+  width: 100vw;
+  height: 100vh;
+  }
 }
 
-.mob-close{
+.mob-close {
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -35,45 +38,50 @@
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus{
-    fill:var(--third-text-color);}
+  &:focus {
+    fill: var(--third-text-color);
+  }
 }
 
-.mob-menu.is-hidden{
+.mob-menu.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.mob-menu__list-link{
+.mob-menu__list-link {
+  margin-bottom: auto;
+  @media screen and(min-width:480px) {
   margin-bottom: 302px;
+  }
+  
 }
-.mob-menu__item{
-  &:not(:last-child){
+.mob-menu__item {
+  &:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
 .mob-menu__studio,
 .mob-menu__portfolio,
-.mob-menu__contact{
+.mob-menu__contact {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
-  color:#212121; 
+  color: #212121;
 }
-.mob-menu__contacts{
+.mob-menu__contacts {
   margin-bottom: 64px;
 }
-.mob-menu-contacts__item{
-  &:not(:last-child){
+.mob-menu-contacts__item {
+  &:not(:last-child) {
     margin-bottom: 32px;
   }
 }
-.mob-menu-contacts__tel{
+.mob-menu-contacts__tel {
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -81,7 +89,7 @@
   letter-spacing: 0.02em;
   color: var(--third-text-color);
 }
-.mob-menu-contacts__mail{
+.mob-menu-contacts__mail {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -90,26 +98,26 @@
   color: var(--second-text-color);
 }
 
-.mob-menu__social{
-  display: flex;
-  margin-bottom: 48px;
+.mob-menu__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+
 }
-.mob-menu__social-item{
-  &:not(:last-child){
+.mob-menu__social-item {
+  &:not(:last-child) {
     margin-right: 20px;
-    .mob-menu__social-link{
+    .mob-menu__social-link {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
       padding-right: 10px;
     }
-    
   }
 }
-.mob-menu__social-link{
+.mob-menu__social-link {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1,22;
+  line-height: 1, 22;
   letter-spacing: 0.02em;
-  color:var(--third-text-color);
-  
+  color: var(--third-text-color);
 }
