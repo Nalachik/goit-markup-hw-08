@@ -106,6 +106,8 @@ img {
 
 .header .container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* webstudio */
@@ -240,6 +242,33 @@ img {
 .header-contacts__icon:hover,
 .header-contacts__icon:focus {
   fill: var(--third-text-color);
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  padding-left: 40px;
+}
+
+.mob-close {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .footer {
