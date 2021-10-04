@@ -261,8 +261,8 @@ img {
   border: none;
   display: block;
   margin-left: auto;
-  padding-top: 10px;
-  padding-right: 50px;
+  padding-top: 5px;
+  padding-right: 60px;
 }
 
 .mob-menu.is-hidden {
