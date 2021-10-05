@@ -1302,8 +1302,13 @@ img {
 
 .modal-checkbox {
   margin-bottom: 30px;
-  display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-checkbox {
+    display: flex;
+  }
 }
 
 .modal-checkbox__label {
